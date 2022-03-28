@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,22 +20,120 @@
         <div class="menu_items">
             <a href="#" class="menu_btn">Install</a>
             <a href="#" class="menu_btn">Learn</a>
-            <a href="#" class="menu_btn">Community</a>
-            <!-- todo: сделать нужна -->
-            <ul class="lang_choose">
-                <li>English (en) </li>
-                <li>Русский (ru) </li>
-            </ul>
+            <a href="community.html" class="menu_btn">Community</a>
+            <select class="lang_choose">
+                <option>English (en)</option>
+                <option>Русский (ru)</option>
+            </select>
         </div>
     </div>
 
     <!-- Section 1 -->
     <div class="section1_box">
-        <H1>Rust</H1>
+        <div class="section1_content_box">
+            <H1>Rust</H1>
+            <p>A language empowering everyone to build reliable and efficient software.</p>
+            <button class="get_rust_btn">Get started</button>
+            <a href="#" class="section1_text">Version 1.59.0</a>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section2_box">
+        <div class="section2_content">
+            <h1>Why Rust?</h1>
+            <div class="section2_box_TH">
+                <div class="section2_TH">
+                    <h2>Performance</h2>
+                    <p>Rust is blazingly fast and memory-efficient: with no runtime or garbage collector,
+                        it can power performance-critical services, run on embedded devices,
+                        and easily integrate with other languages.</p>
+                </div>
+                <div class="section2_TH">
+                    <h2>Reliability</h2>
+                    <p>Rust’s rich type system and ownership model guarantee memory-safety and thread-safety
+                        — enabling you to eliminate many classes of bugs at compile-time.</p>
+                </div>
+                <div class="section2_TH">
+                    <h2>Productivity</h2>
+                    <p>Rust has great documentation, a friendly compiler with useful error messages, and top-notch
+                        tooling — an integrated
+                        package manager and build tool, smart multi-editor support with auto-
+                        completion and type inspections, an
+                        auto-formatter, and more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section3_box">
+        <div class="section3_content_box">
+            <h1>Build it in Rust</h1>
+            <p>In 2018, the Rust community decided to improve the programming experience for a few distinct domains
+                (see the 2018 roadmap). For these, you can find many high-quality crates and some awesome guides on
+                how to get started.</p>
+            <div class="section3_article_box">
+                <div class="section3_article">
+                    <img src="assets/cli_image.svg">
+                    <h2>Command Line</h2>
+                    <p>Whip up a CLI tool quickly with Rust’s robust ecosystem. Rust helps you maintain your app with
+                        confidence and distribute it with ease.</p>
+                    <button>BUILDING TOOLS</button>
+                </div>
+                <div class="section3_article">
+                    <img src="assets/WebImage.svg">
+                    <h2>WebAssembly</h2>
+                    <p>Use Rust to supercharge your JavaScript, one module at a time. Publish to npm, bundle with
+                        webpack, and you’re off to the races.</p>
+                    <button>WRITING WEB APPS</button>
+                </div>
+                <div class="section3_article">
+                    <img src="assets/Net_img.svg">
+                    <h2>Networking</h2>
+                    <p>Predictable performance. Tiny resource footprint. Rock-solid reliability. Rust is great for
+                        network services.</p>
+
+                    <button>WORKING ON SERVERS</button>
+                </div>
+                <div class="section3_article">
+                    <img src="assets/Embd_img.svg">
+                    <h2>Embedded</h2>
+                    <p>Targeting low-resource devices? Need low-level control without giving up high-level conveniences?
+                        Rust has you covered.</p>
+                    <button>START WITH EMBEDDED</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
+        <div class="footer_box">
+            <div class="footer_content_box">
+                <div class="footer_article">
+                    <p>Get Help</p>
+                    <a href="#">Documentation</a>
+                    <a href="#">Rust forge</a>
+                    <a href="#">Ask a question on forum</a>
 
+                    <select class="lang_choose" style="margin-top: 20px;">
+                        <option>English (en)</option>
+                        <option>Русский (ru)</option>
+                    </select>
+                </div>
+
+                <div class="footer_article">
+                    <p>Terms and policies</p>
+                    <a href="#">Code of conduct</a>
+                    <a href="#">Licenses</a>
+                    <a href="#">Privacy</a>
+                </div>
+
+                <div class="footer_article">
+                    <p>Social</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
